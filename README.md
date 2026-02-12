@@ -23,6 +23,9 @@ services:
     volumes:
       - uploads:/app/storage/originals
     environment:
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASSWORD=password
+      - SESSION_SECRET=secret-key-change-me-in-production
       - PORT=3000
     restart: always
 
